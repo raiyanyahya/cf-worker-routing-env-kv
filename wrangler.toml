@@ -1,0 +1,19 @@
+# top level configuration
+name = "poc"
+type = "webpack"
+
+# environment configuration
+[env.staging]
+name = "poc-staging"
+route = "staging.cloudihy.com/*"
+kv_namespaces = [
+  { binding = "FOO", id = "abcd" },
+  { binding = "BAR", id = "xyz" }
+]
+
+# environment configuration
+[env.production]
+route = "cloudiphy.com/*"
+kv_namespaces = [
+  { binding = "FOO", id = "qwe" },
+  { binding = "BAR", id = "rty" }
