@@ -1,16 +1,15 @@
-import { Router } from 'itty-router';
-
-
-const router = Router()
-
-router.get("/pingpong", () => {
-    return new Response("OK")
-})
-router.all("*", () => new Response("404, not found!", {
-    status: 404
-}))
-
-addEventListener('fetch', (e) => {
-    const headerPayload = Object.fromEntries(e.request.headers)
-    e.respondWith(router.handle(e.request, headerPayload))
-})
+addEventListener('fetch', event => {
+    const data = {
+      hello: 'world',
+    };
+  
+    const json = JSON.stringify(data, null, 2);
+  
+    return event.respondWith(
+      new Response(json, {
+        headers: {
+          'content-type': 'application/json;charset=UTF-8',
+        },
+      })
+    );
+  });
