@@ -2,7 +2,7 @@
 name = "poc"
 type = "webpack"
 route = "dev.cloudiphy.com/*"
-zone_id = = "001b34a2cddc65e5740c4706d9b52da3"
+zone_id = "001b34a2cddc65e5740c4706d9b52da3"
 
 
 [vars]
