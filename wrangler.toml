@@ -2,11 +2,11 @@
 name = "poc"
 type = "webpack"
 route = "dev.cloudiphy.com/*"
-vars = { ENVIRONMENT = "dev" }
+
 
 [vars]
 API_TOKEN = "example_dev_token"
-
+ENVIRONMENT = "dev"
 
 [env.staging]
 name = "poc-staging"
