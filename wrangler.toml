@@ -15,5 +15,5 @@ zone_id = "001b34a2cddc65e5740c4706d9b52da3"
 [env.production]
 name = "poc-prod"
 vars = { ENVIRONMENT = "production" }
-routes = ["cloudiphy.com/foo/*","cloudiphy.com/*"]
+routes = ["https://cloudiphy.com/foo/*","https://cloudiphy.com/*"]
 zone_id = "001b34a2cddc65e5740c4706d9b52da3"
