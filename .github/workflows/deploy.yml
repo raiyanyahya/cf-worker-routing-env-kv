@@ -19,8 +19,8 @@ jobs:
         run: |
              npm i -g npm@latest
              npm install
-             CF_ACCOUNT_ID=$CF_ACCOUNT_ID CF_API_TOKEN=$CF_API_TOKEN npx @cloudflare/wrangler publish --env staging
              CF_ACCOUNT_ID=$CF_ACCOUNT_ID CF_API_TOKEN=$CF_API_TOKEN npx @cloudflare/wrangler publish --env production
+             CF_ACCOUNT_ID=$CF_ACCOUNT_ID CF_API_TOKEN=$CF_API_TOKEN npx @cloudflare/wrangler publish --env staging
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
