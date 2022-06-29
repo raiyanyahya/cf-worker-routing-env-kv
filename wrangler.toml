@@ -13,6 +13,7 @@ ENVIRONMENT = "dev"
 name = "poc-staging"
 vars = { ENVIRONMENT = "staging" }
 route = "staging.cloudiphy.com/*"
+zone_id = "001b34a2cddc65e5740c4706d9b52da3"
 
 [env.production]
 name = "poc-prod"
@@ -21,3 +22,4 @@ routes = [
   "cloudiphy.com/foo/*",
   "cloudiphy.com/bar/*"
 ]
+zone_id = "001b34a2cddc65e5740c4706d9b52da3"
