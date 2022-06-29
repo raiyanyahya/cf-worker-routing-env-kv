@@ -20,3 +20,4 @@ route = "cloudiphy.com/*"
 kv_namespaces = [
   { binding = "FOO", id = "qwe" },
   { binding = "BAR", id = "rty" }
+  ]
