@@ -6,6 +6,9 @@ const router = Router()
 router.get("/pingpong", () => {
     return new Response("OK")
 })
+router.get("/foo/pingpong", () => {
+    return new Response("OK")
+})
 router.all("*", () => new Response("404, not found!", {
     status: 404
 }))
