@@ -1,0 +1,21 @@
+
+
+{
+    "name": "{{ project-name }}",
+    "version": "1.0.0",
+    "description": "Best practice worker deployment",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "format": "prettier --write '**/*.{js,css,json,md}'"
+    },
+    "author": "Raiyan Yahya",
+    "license": "PRIVATE",
+    "devDependencies": {
+      "prettier": "^1.18.2"
+    },
+    "dependencies": {
+      "itty-router": "2.6.1",
+      "wrangler-js": "0.1.11"
+    }
+  }

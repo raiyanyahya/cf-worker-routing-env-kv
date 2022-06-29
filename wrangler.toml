@@ -2,6 +2,9 @@
 name = "poc"
 type = "webpack"
 
+[vars]
+API_TOKEN = "example_dev_token"
+
 # environment configuration
 [env.staging]
 name = "poc-staging"
