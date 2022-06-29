@@ -1,23 +1,22 @@
 # top level configuration
 name = "poc"
 type = "webpack"
+route = "dev.cloudiphy.com/*"
+vars = { ENVIRONMENT = "dev" }
 
 [vars]
 API_TOKEN = "example_dev_token"
 
-# environment configuration
+
 [env.staging]
 name = "poc-staging"
-route = "staging.cloudihy.com/*"
-kv_namespaces = [
-  { binding = "FOO", id = "abcd" },
-  { binding = "BAR", id = "xyz" }
-]
+vars = { ENVIRONMENT = "staging" }
+route = "staging.cloudiphy.com/*"
 
-# environment configuration
 [env.production]
-route = "cloudiphy.com/*"
-kv_namespaces = [
-  { binding = "FOO", id = "qwe" },
-  { binding = "BAR", id = "rty" }
-  ]
+name = "poc-prod"
+vars = { ENVIRONMENT = "production" }
+routes = [
+  "cloudiphy.com/foo/*",
+  "cloudiphy.com/bar/*"
+]
