@@ -11,9 +11,7 @@ name = "poc-staging"
 vars = { ENVIRONMENT = "staging" }
 route = "staging.cloudiphy.com/*"
 zone_id = "001b34a2cddc65e5740c4706d9b52da3"
-kv_namespaces = [
-  { binding = "I_KV" }
-]
+
 
 [env.production]
 name = "poc-prod"
